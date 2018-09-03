@@ -1,3 +1,4 @@
-Dir[File.join File.dirname(__FILE__), 'middleman-breadcrumbs', '**', '*.rb'].each {|file| puts file; require file }
+require './middleman-breadcrumbs/breadcrumbs.rb'
+require './middleman-breadcrumbs/version.rb'
 
 ::Middleman::Extensions.register :breadcrumbs, Breadcrumbs
